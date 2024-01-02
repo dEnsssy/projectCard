@@ -1,5 +1,17 @@
 let openTabs = []; // Хранит открытые табы
 
+// window.addEventListener(
+//     `resize`,
+//     () => {
+//         // some code
+//         let availableScreenWidth = window.screen.availWidth;
+//         let body = document.querySelector("body")
+//         body.style.maxWidth = `${availableScreenWidth}px`;
+//         console.log(body.style.maxWidth);
+//     },
+//     false
+// );
+// console.log(availableScreenWidth);
 let availableScreenWidth = window.screen.availWidth;
 let mobileMenu = document.getElementById("mobileMenu");
 if (availableScreenWidth < 770) {
@@ -28,8 +40,6 @@ function toggleMenu() {
     mobileMenu.style.display =
         mobileMenu.style.display === "block" ? "none" : "block";
 }
-
-
 
 function openTab(evt, tabName) {
     // Проверяем, открыт ли таб
