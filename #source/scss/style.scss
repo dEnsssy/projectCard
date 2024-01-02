@@ -819,7 +819,7 @@ body {
     z-index: 999; /* Поверх других элементов */
 }
 
-@media (max-width: 360px) {
+@media (max-width: 768px) {
     .container {
         max-width: 320px;
     }
