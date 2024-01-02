@@ -1050,9 +1050,9 @@ body {
   z-index: 999; /* Поверх других элементов */
 }
 
-@media (max-width: 768px) {
+@media (max-width: 360px) {
   .container {
-    max-width: 710px;
+    max-width: 300px;
   }
   .hiddenMob {
     display: none;
