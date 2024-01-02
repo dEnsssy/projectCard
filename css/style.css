@@ -1306,6 +1306,7 @@ body {
     margin-top: 53px;
   }
   .price__content > h1 {
+    padding-top: 50px;
     font-size: 26px;
     letter-spacing: normal;
     margin-bottom: 55px;
@@ -1584,6 +1585,7 @@ body {
     line-height: 22px;
   }
   .cardsMobile {
+    margin-bottom: 30px;
     width: 346px;
     margin: 0 auto;
   }
