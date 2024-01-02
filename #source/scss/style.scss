@@ -543,12 +543,7 @@ body {
     position: relative;
 }
 .price-arrow1 {
-    background: url("/img/price/arrow1.png") no-repeat;
-    width: 85px;
-    height: 66px;
-    position: absolute;
-    top: 12px;
-    left: 302px;
+    background: none;
 }
 .price-arrow2 {
     position: absolute;
@@ -870,7 +865,7 @@ body {
 }
 
 @media (max-width: 768px) {
-    body{
+    body {
         max-width: 768px;
     }
     .container {
@@ -1000,7 +995,7 @@ body {
         width: 346px;
         margin: 0 auto;
     }
-    
+
     .bg1-blur {
         top: 64px;
         left: -90px;
@@ -1212,7 +1207,7 @@ body {
     }
 }
 @media (max-width: 360px) {
-    body{
+    body {
         max-width: 360px;
     }
     .container {
@@ -1277,7 +1272,7 @@ body {
     }
     .tagline__blur {
         width: 0px; // 250
-        height: 0px;// 250
+        height: 0px; // 250
         background: rgba(255, 255, 255, 0.1);
         -webkit-filter: blur(100px);
         filter: blur(100px);
@@ -1291,7 +1286,7 @@ body {
     }
     .tagline__bg2 {
         width: 0px; //257
-        height: 0px;//206
+        height: 0px; //206
         background: none;
         top: 354px;
         left: 48px;
@@ -1533,4 +1528,64 @@ body {
         display: block;
         background: none;
     }
+}
+
+//Модальное окно
+/* Стили для модального окна */
+.modal {
+    display: none; /* По умолчанию модальное окно скрыто */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 10001;
+}
+
+.modal-content {
+    background-color: #2d2c30;
+    border-radius: 20px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    height: 80%;
+    color: white;
+    font-weight: 600;
+}
+.modal-content-text {
+    display: flex;
+    font-size: 20px;
+    gap: 50px;
+
+    justify-content: space-between;
+}
+.modal-content-text a {
+    color: white;
+}
+.modalMoreInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.modalOrder {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }

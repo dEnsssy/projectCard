@@ -9,6 +9,26 @@
         <script src="script.js" defer></script>
     </head>
     <body>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="modal-content-text">
+                    <div class="modalOrder">
+                        Для заказа вы можете обратиться ко мне в социальных
+                        сетях:
+                        <a href="#"><h1>Whats App</h1></a>
+                        <a href="#"><h2>Telegram</h2></a>
+                    </div>
+                    <div class="modalMoreInfo">
+                        Для получения более детальной информации вы можете
+                        посетить мои соцальные сети:
+                        <a href="#"><h1>Whats App</h1></a>
+                        <a href="#"><h2>Telegram</h2></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <header class="header">
             <div class="header__content container">
                 <div class="header__logo animationLoad hidden">
@@ -33,7 +53,7 @@
                         </a>
                     </ul>
                 </div>
-                <button class="header__btn animationLoad hidden hiddenMob">
+                <button class="header__btn animationLoad hidden hiddenMob forModal">
                     Заказать
                 </button>
                 <button class="activeMob menuMobile" onclick="toggleMenu()">
@@ -42,12 +62,16 @@
 
                 <!-- Mobile menu -->
                 <div class="overlay" id="overlay"></div>
-                <div class="mobile-menu activeMob " id="mobileMenu">
+                <div class="mobile-menu activeMob" id="mobileMenu">
                     <div class="mobile-menu-header">
                         <div class="header__logo">
                             <a href="/index.html">Logo</a>
                         </div>
-                        <button class="cross__menu" style="background: none" onclick="toggleMenu()">
+                        <button
+                            class="cross__menu"
+                            style="background: none"
+                            onclick="toggleMenu()"
+                        >
                             <img
                                 src="./img/mobile/header/image 71.png"
                                 alt=""
@@ -72,7 +96,9 @@
                                 <li>Контакты</li>
                             </a>
                         </ul>
-                        <button class="header__btn activeMob hiddenMob mobileBtn" >
+                        <button
+                            class="header__btn activeMob hiddenMob mobileBtn forModal"
+                        >
                             Заказать
                         </button>
                     </div>
@@ -92,8 +118,8 @@
                         сотрудников компании.
                     </p>
                     <div class="tagline__btns animationLoad hidden">
-                        <button class="tagline__btns-order">Заказать</button>
-                        <button class="tagline__btns-otherInfo buttonWhite">
+                        <button class="tagline__btns-order forModal">Заказать</button>
+                        <button class="tagline__btns-otherInfo buttonWhite forModal">
                             <h2>Подробнее</h2>
                             <div></div>
                         </button>
@@ -296,12 +322,12 @@
                                 </h1>
                                 <div class="price__cards-card-text-btns">
                                     <button
-                                        class="price__cards-card-text-btns-order"
+                                        class="price__cards-card-text-btns-order forModal"
                                     >
                                         Заказать
                                     </button>
                                     <button
-                                        class="price__cards-card-text-btns-moreInfo buttonWhite"
+                                        class="price__cards-card-text-btns-moreInfo buttonWhite forModal"
                                     >
                                         Подробнее
                                     </button>
@@ -324,12 +350,12 @@
                                 </h1>
                                 <div class="price__cards-card-text-btns">
                                     <button
-                                        class="price__cards-card-text-btns-order"
+                                        class="price__cards-card-text-btns-order forModal"
                                     >
                                         Заказать
                                     </button>
                                     <button
-                                        class="price__cards-card-text-btns-moreInfo buttonWhite"
+                                        class="price__cards-card-text-btns-moreInfo buttonWhite forModal"
                                     >
                                         Подробнее
                                     </button>
@@ -353,12 +379,12 @@
                                 </h1>
                                 <div class="price__cards-card-text-btns">
                                     <button
-                                        class="price__cards-card-text-btns-order"
+                                        class="price__cards-card-text-btns-order forModal"
                                     >
                                         Заказать
                                     </button>
                                     <button
-                                        class="price__cards-card-text-btns-moreInfo buttonWhite"
+                                        class="price__cards-card-text-btns-moreInfo buttonWhite forModal"
                                     >
                                         Подробнее
                                     </button>
@@ -382,12 +408,12 @@
                                 </h1>
                                 <div class="price__cards-card-text-btns">
                                     <button
-                                        class="price__cards-card-text-btns-order"
+                                        class="price__cards-card-text-btns-order forModal"
                                     >
                                         Заказать
                                     </button>
                                     <button
-                                        class="price__cards-card-text-btns-moreInfo buttonWhite"
+                                        class="price__cards-card-text-btns-moreInfo buttonWhite forModal"
                                     >
                                         Подробнее
                                     </button>
@@ -410,12 +436,12 @@
                                 </h1>
                                 <div class="price__cards-card-text-btns">
                                     <button
-                                        class="price__cards-card-text-btns-order"
+                                        class="price__cards-card-text-btns-order forModal"
                                     >
                                         Заказать
                                     </button>
                                     <button
-                                        class="price__cards-card-text-btns-moreInfo buttonWhite"
+                                        class="price__cards-card-text-btns-moreInfo buttonWhite forModal"
                                     >
                                         Подробнее
                                     </button>
@@ -439,12 +465,12 @@
                                 </h1>
                                 <div class="price__cards-card-text-btns">
                                     <button
-                                        class="price__cards-card-text-btns-order"
+                                        class="price__cards-card-text-btns-order forModal"
                                     >
                                         Заказать
                                     </button>
                                     <button
-                                        class="price__cards-card-text-btns-moreInfo buttonWhite"
+                                        class="price__cards-card-text-btns-moreInfo buttonWhite forModal"
                                     >
                                         Подробнее
                                     </button>
@@ -588,10 +614,10 @@
                         </div>
                     </div>
                     <div class="faq__btns">
-                        <button class="faq__btns-more">
+                        <button class="faq__btns-more forModal">
                             Показать больше FAQ
                         </button>
-                        <button class="faq__btns-more-ask">
+                        <button class="faq__btns-more-ask forModal">
                             Задать вопрос
                         </button>
                         <div class="activeMob faq__btns-arrow"></div>
@@ -622,7 +648,7 @@
                             </a>
                         </ul>
                     </div>
-                    <button class="footer__btn hiddenMob">Заказать</button>
+                    <button class="footer__btn hiddenMob forModal">Заказать</button>
                     <div class="footer__links-imgs activeMob">
                         <a href="#">
                             <div>

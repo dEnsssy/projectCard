@@ -1,17 +1,5 @@
 let openTabs = []; // Хранит открытые табы
 
-// window.addEventListener(
-//     `resize`,
-//     () => {
-//         // some code
-//         let availableScreenWidth = window.screen.availWidth;
-//         let body = document.querySelector("body")
-//         body.style.maxWidth = `${availableScreenWidth}px`;
-//         console.log(body.style.maxWidth);
-//     },
-//     false
-// );
-// console.log(availableScreenWidth);
 let availableScreenWidth = window.screen.availWidth;
 let mobileMenu = document.getElementById("mobileMenu");
 if (availableScreenWidth < 770) {
@@ -67,3 +55,29 @@ function openTab(evt, tabName) {
         }
     }
 }
+
+// const modalBnts = document.querySelectorAll(".forModal");
+// modalBnts.addEventListener("click", () => {});
+
+// Получаем элементы DOM
+var modal = document.getElementById("myModal");
+var btns = document.querySelectorAll(".forModal");
+var span = document.getElementsByClassName("close")[0];
+
+for (let key in btns) {
+    // Открываем модальное окно при клике на кнопку
+    btns[key].onclick = function () {
+        modal.style.display = "block";
+    };
+}
+
+// Закрываем модальное окно при клике на крестик
+span.onclick = function () {
+    modal.style.display = "none";
+};
+// Закрываем модальное окно при клике вне его
+window.onclick = function (event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+};
