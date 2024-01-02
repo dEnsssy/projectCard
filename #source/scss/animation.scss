@@ -1,0 +1,59 @@
+.buttonWhite:hover {
+    transform: scale(1.1);
+    border: 1px solid #fff;
+}
+
+.header__btn:hover {
+    transition: all 0.3s;
+    transform: translateX(-5px) translateY(5px) scale(1.1);
+    box-shadow: 10px 10px 100px white;
+}
+.header__btn:active {
+    transition: all 0.3s;
+    transform: translateX(2px) translateY(-2px) scale(1.05);
+    box-shadow: 10px 10px 100px grey;
+}
+
+.tagline__btns-order:hover {
+    transition: all 0.3s;
+    transform: scale(1.1);
+    box-shadow: 10px 10px 100px white;
+}
+.tagline__btns-order:active {
+    transition: all 0.3s;
+    transform: translateX(2px) translateY(-2px) scale(1.05);
+    box-shadow: 10px 10px 100px grey;
+}
+
+.price__cards-card-text-btns-order:hover {
+    transition: all 0.3s;
+    transform: scale(1.1);
+    box-shadow: 10px 10px 100px white;
+}
+.price__cards-card-text-btns-order:active {
+    transition: all 0.3s;
+    transform: translateX(2px) translateY(-2px) scale(1.05);
+    box-shadow: 10px 10px 100px grey;
+}
+
+.footer__btn:hover {
+    transition: all 0.3s;
+    transform: scale(1.1);
+    box-shadow: 10px 10px 100px white;
+}
+.footer__btn:active {
+    transition: all 0.3s;
+    transform: translateX(2px) translateY(-2px) scale(1.05);
+    box-shadow: 10px 10px 100px grey;
+}
+
+.faq__btns-more-ask:hover {
+    transition: all 0.3s;
+    transform: scale(1.1);
+    box-shadow: 10px 10px 100px white;
+}
+.faq__btns-more-ask:active {
+    transition: all 0.3s;
+    transform: translateX(2px) translateY(-2px) scale(1.05);
+    box-shadow: 10px 10px 100px grey;
+}

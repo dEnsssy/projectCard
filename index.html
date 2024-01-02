@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Card Brand</title>
+        <link rel="short icon" href="./img/logo.svg" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <header class="header">
+            <div class="header__content container">
+                <div class="header__logo animationLoad hidden">
+                    <a href="#">Logo</a>
+                </div>
+                <div class="header__menu animationLoad hidden hiddenMob">
+                    <ul class="header__menu-list">
+                        <a href="#">
+                            <li class="headerActive">Главная</li>
+                        </a>
+                        <a href="#">
+                            <li>Преимущества</li>
+                        </a>
+                        <a href="#">
+                            <li>Наши цены</li>
+                        </a>
+                        <a href="#">
+                            <li>FAQ</li>
+                        </a>
+                        <a href="#">
+                            <li>Контакты</li>
+                        </a>
+                    </ul>
+                </div>
+                <button class="header__btn animationLoad hidden hiddenMob">
+                    Заказать
+                </button>
+                <button class="activeMob" onclick="toggleMenu()">
+                    <img src="./img/mobile/header/menu.png" alt="" />
+                </button>
+            </div>
+        </header>
+        <main class="main">
+            <section class="tagline container">
+                <div class="tagline__text">
+                    <div class="tagline__text-title animationLoad hidden">
+                        Сделай <br /><span>свой бренд узнаваемым</span>
+                        <div></div>
+                    </div>
+                    <p class="animationLoad hidden">
+                        Изготовление брендированных NFC карт с онлайн сервисом
+                        для создания и редактирования цифровых визиток для
+                        сотрудников компании.
+                    </p>
+                    <div class="tagline__btns animationLoad hidden">
+                        <button class="tagline__btns-order">Заказать</button>
+                        <button class="tagline__btns-otherInfo buttonWhite">
+                            <h2>Подробнее</h2>
+                            <div></div>
+                        </button>
+                    </div>
+                    <div class="tagline__stats">
+                        <div
+                            class="tagline__stats-text tagline__stats-material animationLoad hidden"
+                        >
+                            <h1>10+</h1>
+                            <p>Материалов карт</p>
+                        </div>
+                        <div
+                            class="tagline__stats-text tagline__stats-reviews animationLoad hidden"
+                        >
+                            <h1>100+</h1>
+                            <p>Отзывов</p>
+                        </div>
+                        <div
+                            class="tagline__stats-text tagline__stats-variation animationLoad hidden"
+                        >
+                            <h1>∞+</h1>
+                            <p>Вариации карт</p>
+                        </div>
+                    </div>
+                    <div class="tagline__blur-box animationLoad hidden">
+                        <div class="tagline__blur"></div>
+                        <div class="tagline__bg1"></div>
+                        <div class="tagline__bg2"></div>
+                    </div>
+                    <div class="tagline__mobBg activeMob animationLoad hidden">
+                        <img src="./img/mobile/tagline/cards.png" alt="" />
+                    </div>
+                </div>
+                <div class="tagline__cards hiddenMob">
+                    <div class="tagline__cards-box">
+                        <img
+                            class="tagline__cards1 animationLoad hidden"
+                            src="./img/tagLineCards/1.png"
+                            alt=""
+                        />
+                        <img
+                            class="tagline__cards2 animationLoad hidden"
+                            src="./img/tagLineCards/2.png"
+                            alt=""
+                        />
+                        <img
+                            class="tagline__cards3 animationLoad hidden"
+                            src="./img/tagLineCards/3.png"
+                            alt=""
+                        />
+                        <img
+                            class="tagline__cards4 animationLoad hidden"
+                            src="./img/tagLineCards/4.png"
+                            alt=""
+                        />
+                        <img
+                            class="tagline__cards5 animationLoad hidden"
+                            src="./img/tagLineCards/5.png"
+                            alt=""
+                        />
+                        <img
+                            class="tagline__cards6 animationLoad hidden"
+                            src="./img/tagLineCards/6.png"
+                            alt=""
+                        />
+                        <img
+                            class="tagline__cards7 animationLoad hidden"
+                            src="./img/tagLineCards/7.png"
+                            alt=""
+                        />
+                        <img
+                            class="tagline__cards8 animationLoad hidden"
+                            src="./img/tagLineCards/8.png"
+                            alt=""
+                        />
+                    </div>
+                </div>
+            </section>
+            <section class="advantages">
+                <div class="advantages__content container">
+                    <h1>Наши преимущества</h1>
+                    <div class="advantages__content-cards">
+                        <div class="circle-big hiddenMob"></div>
+                        <div class="circle-mini hiddenMob"></div>
+                        <img
+                            class="advantagesImg1 hiddenMob"
+                            src="./img/advantagesImgs/1.png"
+                            alt=""
+                        />
+                        <img
+                            class="advantagesImg2 hiddenMob"
+                            src="./img/advantagesImgs/2.png"
+                            alt=""
+                        />
+                        <img
+                            class="advantagesImg3 hiddenMob"
+                            src="./img/advantagesImgs/3.png"
+                            alt=""
+                        />
+                        <img
+                            class="advantagesImg4 hiddenMob"
+                            src="./img/advantagesImgs/4.png"
+                            alt=""
+                        />
+                        <img
+                            class="advantagesImg5 hiddenMob"
+                            src="./img/advantagesImgs/5.png"
+                            alt=""
+                        />
+                        <div class="bg1-blur"></div>
+                        <div class="bg2-blur"></div>
+                        <div class="advantagesImg-arrow1"></div>
+                        <div class="advantagesImg-arrow2"></div>
+                        <img
+                            class="advantagesImg-vectorBg hiddenMob"
+                            src="./img/advantagesImgs/VectorBg.png"
+                            alt=""
+                        />
+                    </div>
+                    <div class="advantages__content-textBox">
+                        <div class="advantages__content-textBox-card">
+                            <div class="advantagesImgs__flex1"></div>
+                            <div class="advantages__content-textBox-card-text">
+                                <h1>Оперативность</h1>
+                                <p>
+                                    С другой стороны реализация намеченных
+                                    плановых заданий влечет за собой процесс
+                                    внедрения и модернизации предложений.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="advantages__content-textBox-card">
+                            <div class="advantagesImgs__flex2"></div>
+                            <div class="advantages__content-textBox-card-text">
+                                <h1>Надежность</h1>
+                                <p>
+                                    С другой стороны реализация намеченных
+                                    плановых заданий влечет за собой процесс
+                                    внедрения и модернизации предложений.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="advantages__content-textBox-card">
+                            <div class="advantagesImgs__flex3"></div>
+                            <div class="advantages__content-textBox-card-text">
+                                <h1>Отзывы</h1>
+                                <p>
+                                    С другой стороны реализация намеченных
+                                    плановых заданий влечет за собой процесс
+                                    внедрения и модернизации предложений.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardsMobile activeMob">
+                    <img src="./img/mobile/advantages/cards.png" alt="" />
+                </div>
+            </section>
+            <section class="price container">
+                <div class="price__content">
+                    <h1>Наши цены</h1>
+                    <div class="price-arrow1"></div>
+                    <img
+                        class="price-arrow2 hiddenMob"
+                        src="./img/price/arrow2.png"
+                        alt=""
+                    />
+                    <img
+                        class="price-arrow3 hiddenMob"
+                        src="./img/price/arrow3.png"
+                        alt=""
+                    />
+                    <img
+                        class="price-circle1 hiddenMob"
+                        src="./img/price/circle1.png"
+                        alt=""
+                    />
+                    <img
+                        class="price-circle2 hiddenMob"
+                        src="./img/price/circle2.png"
+                        alt=""
+                    />
+                    <div class="price__bgBlur1 hiddenMob"></div>
+                    <div class="price__bgBlur2 hiddenMob"></div>
+                    <div class="price__cards">
+                        <div class="price__cards-card">
+                            <div class="price__cards-card-first"></div>
+
+                            <div class="price__cards-card-text">
+                                <h2>Общая NFC - Карта</h2>
+                                <p>
+                                    Карта без нанесения фирменного стиля и
+                                    контактной информации. С полным набором
+                                    функций.
+                                </p>
+                                <h1>
+                                    500₽ <br />
+                                    Опт: 250₽
+                                </h1>
+                                <div class="price__cards-card-text-btns">
+                                    <button
+                                        class="price__cards-card-text-btns-order"
+                                    >
+                                        Заказать
+                                    </button>
+                                    <button
+                                        class="price__cards-card-text-btns-moreInfo buttonWhite"
+                                    >
+                                        Подробнее
+                                    </button>
+                                </div>
+                                <h3>Гарантия на товар: 1 – год.</h3>
+                            </div>
+                        </div>
+
+                        <div class="price__cards-card">
+                            <div class="price__cards-card-second"></div>
+                            <div class="price__cards-card-text">
+                                <h2>Персональная</h2>
+                                <p>
+                                    Фирменная карта с нанесением контактной
+                                    информации и полным набором функций.
+                                </p>
+                                <h1>
+                                    600₽ <br />
+                                    Опт: 450₽
+                                </h1>
+                                <div class="price__cards-card-text-btns">
+                                    <button
+                                        class="price__cards-card-text-btns-order"
+                                    >
+                                        Заказать
+                                    </button>
+                                    <button
+                                        class="price__cards-card-text-btns-moreInfo buttonWhite"
+                                    >
+                                        Подробнее
+                                    </button>
+                                </div>
+                                <h3>Гарантия на товар: 1 – год.</h3>
+                            </div>
+                        </div>
+
+                        <div class="price__cards-card">
+                            <div class="price__cards-card-third"></div>
+                            <div class="price__cards-card-text">
+                                <h2>Индивидуальный дизайн</h2>
+                                <p>
+                                    Карта с нанесением собственного дизайна и с
+                                    полным набором <br />
+                                    функций.
+                                </p>
+                                <h1>
+                                    700₽ <br />
+                                    Опт: 1000₽
+                                </h1>
+                                <div class="price__cards-card-text-btns">
+                                    <button
+                                        class="price__cards-card-text-btns-order"
+                                    >
+                                        Заказать
+                                    </button>
+                                    <button
+                                        class="price__cards-card-text-btns-moreInfo buttonWhite"
+                                    >
+                                        Подробнее
+                                    </button>
+                                </div>
+                                <h3>Гарантия на товар: 1 – год.</h3>
+                            </div>
+                        </div>
+
+                        <div class="price__cards-card hiddenMob">
+                            <img src="./img/price/1.png" alt="" />
+                            <div class="price__cards-card-text">
+                                <h2>Общая NFC - Карта</h2>
+                                <p>
+                                    Карта без нанесения фирменного стиля и
+                                    контактной информации. С полным набором
+                                    функций.
+                                </p>
+                                <h1>
+                                    500₽ <br />
+                                    Опт: 250₽
+                                </h1>
+                                <div class="price__cards-card-text-btns">
+                                    <button
+                                        class="price__cards-card-text-btns-order"
+                                    >
+                                        Заказать
+                                    </button>
+                                    <button
+                                        class="price__cards-card-text-btns-moreInfo buttonWhite"
+                                    >
+                                        Подробнее
+                                    </button>
+                                </div>
+                                <h3>Гарантия на товар: 1 – год.</h3>
+                            </div>
+                        </div>
+
+                        <div class="price__cards-card hiddenMob">
+                            <img src="./img/price/2.png" alt="" />
+                            <div class="price__cards-card-text">
+                                <h2>Персональная</h2>
+                                <p>
+                                    Фирменная карта с нанесением контактной
+                                    информации и полным набором функций.
+                                </p>
+                                <h1>
+                                    600₽ <br />
+                                    Опт: 450₽
+                                </h1>
+                                <div class="price__cards-card-text-btns">
+                                    <button
+                                        class="price__cards-card-text-btns-order"
+                                    >
+                                        Заказать
+                                    </button>
+                                    <button
+                                        class="price__cards-card-text-btns-moreInfo buttonWhite"
+                                    >
+                                        Подробнее
+                                    </button>
+                                </div>
+                                <h3>Гарантия на товар: 1 – год.</h3>
+                            </div>
+                        </div>
+
+                        <div class="price__cards-card hiddenMob">
+                            <img src="./img/price/3.png" alt="" />
+                            <div class="price__cards-card-text">
+                                <h2>Индивидуальный дизайн</h2>
+                                <p>
+                                    Карта с нанесением собственного дизайна и с
+                                    полным набором <br />
+                                    функций.
+                                </p>
+                                <h1>
+                                    700₽ <br />
+                                    Опт: 1000₽
+                                </h1>
+                                <div class="price__cards-card-text-btns">
+                                    <button
+                                        class="price__cards-card-text-btns-order"
+                                    >
+                                        Заказать
+                                    </button>
+                                    <button
+                                        class="price__cards-card-text-btns-moreInfo buttonWhite"
+                                    >
+                                        Подробнее
+                                    </button>
+                                </div>
+                                <h3>Гарантия на товар: 1 – год.</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="faq">
+                <div class="faq__content container">
+                    <h1 class="hiddenMob">Часто задаваемые вопросы</h1>
+                    <h1 class="activeMob">FAQ</h1>
+                    <div class="tabs">
+                        <div class="tab">
+                            <div class="tabs__mb">
+                                <button
+                                    class="tablinks"
+                                    onclick="openTab(event, 'tab1')"
+                                >
+                                    <h1>Вопрос 1</h1>
+                                    <div class="tab__plusMinus"></div>
+                                </button>
+                                <div id="tab1" class="tabcontent">
+                                    <p>
+                                        Давно выяснено, что при оценке дизайна и
+                                        композиции читаемый текст мешает
+                                        сосредоточиться. Lorem Ipsum используют
+                                        потому, что тот обеспечивает более или
+                                        менее стандартное заполнение шаблона, а
+                                        также реальное распределение букв и
+                                        пробелов в абзацах, которое не
+                                        получается при простой дубликации "Здесь
+                                        ваш текст. Давно выяснено, что при
+                                        оценке дизайна и композиции читаемый
+                                        текст
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="tabs__mb">
+                                <button
+                                    class="tablinks"
+                                    onclick="openTab(event, 'tab2')"
+                                >
+                                    <h1>Вопрос 2</h1>
+                                    <div class="tab__plusMinus"></div>
+                                </button>
+                                <div id="tab2" class="tabcontent">
+                                    <p>
+                                        Давно выяснено, что при оценке дизайна и
+                                        композиции читаемый текст мешает
+                                        сосредоточиться. Lorem Ipsum используют
+                                        потому, что тот обеспечивает более или
+                                        менее стандартное заполнение шаблона, а
+                                        также реальное распределение букв и
+                                        пробелов в абзацах, которое не
+                                        получается при простой дубликации "Здесь
+                                        ваш текст. Давно выяснено, что при
+                                        оценке дизайна и композиции читаемый
+                                        текст
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="tabs__mb">
+                                <button
+                                    class="tablinks"
+                                    onclick="openTab(event, 'tab3')"
+                                >
+                                    <h1>Вопрос 3</h1>
+                                    <div class="tab__plusMinus"></div>
+                                </button>
+                                <div id="tab3" class="tabcontent">
+                                    <p>
+                                        Давно выяснено, что при оценке дизайна и
+                                        композиции читаемый текст мешает
+                                        сосредоточиться. Lorem Ipsum используют
+                                        потому, что тот обеспечивает более или
+                                        менее стандартное заполнение шаблона, а
+                                        также реальное распределение букв и
+                                        пробелов в абзацах, которое не
+                                        получается при простой дубликации "Здесь
+                                        ваш текст. Давно выяснено, что при
+                                        оценке дизайна и композиции читаемый
+                                        текст
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="tabs__mb">
+                                <button
+                                    class="tablinks"
+                                    onclick="openTab(event, 'tab4')"
+                                >
+                                    <h1>Вопрос 4</h1>
+                                    <div class="tab__plusMinus"></div>
+                                </button>
+                                <div id="tab4" class="tabcontent">
+                                    <p>
+                                        Давно выяснено, что при оценке дизайна и
+                                        композиции читаемый текст мешает
+                                        сосредоточиться. Lorem Ipsum используют
+                                        потому, что тот обеспечивает более или
+                                        менее стандартное заполнение шаблона, а
+                                        также реальное распределение букв и
+                                        пробелов в абзацах, которое не
+                                        получается при простой дубликации "Здесь
+                                        ваш текст. Давно выяснено, что при
+                                        оценке дизайна и композиции читаемый
+                                        текст
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="tabs__mb">
+                                <button
+                                    class="tablinks"
+                                    onclick="openTab(event, 'tab5')"
+                                >
+                                    <h1>Вопрос 5</h1>
+                                    <div class="tab__plusMinus"></div>
+                                </button>
+                                <div id="tab5" class="tabcontent">
+                                    <p>
+                                        Давно выяснено, что при оценке дизайна и
+                                        композиции читаемый текст мешает
+                                        сосредоточиться. Lorem Ipsum используют
+                                        потому, что тот обеспечивает более или
+                                        менее стандартное заполнение шаблона, а
+                                        также реальное распределение букв и
+                                        пробелов в абзацах, которое не
+                                        получается при простой дубликации "Здесь
+                                        ваш текст. Давно выяснено, что при
+                                        оценке дизайна и композиции читаемый
+                                        текст
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq__btns">
+                        <button class="faq__btns-more">
+                            Показать больше FAQ
+                        </button>
+                        <button class="faq__btns-more-ask">
+                            Задать вопрос
+                        </button>
+                        <div class="activeMob faq__btns-arrow"></div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__content container">
+                <div class="footer__text">
+                    <div class="footer__logo"><a href="#">Logo</a></div>
+                    <div class="footer__menu hiddenMob">
+                        <ul class="footer__menu-list">
+                            <a href="#">
+                                <li class="footerActive">Главная</li>
+                            </a>
+                            <a href="#">
+                                <li>Преимущества</li>
+                            </a>
+                            <a href="#">
+                                <li>Наши цены</li>
+                            </a>
+                            <a href="#">
+                                <li>FAQ</li>
+                            </a>
+                            <a href="#">
+                                <li>Контакты</li>
+                            </a>
+                        </ul>
+                    </div>
+                    <button class="footer__btn hiddenMob">Заказать</button>
+                    <div class="footer__links-imgs activeMob">
+                        <a href="#">
+                            <div>
+                                <img src="./img/mobile/footer/1.svg" alt="" />
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div>
+                                <img src="./img/mobile/footer/2.svg" alt="" />
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div>
+                                <img
+                                    src="./img/mobile/footer/Mask group.svg"
+                                    alt=""
+                                />
+                            </div>
+                        </a>
+                    </div>
+                    <h1 class="activeMob">Политика конфиденциальности</h1>
+                </div>
+                <div class="footer__links hiddenMob">
+                    <h1>Политика конфиденциальности</h1>
+                    <div class="footer__links-imgs">
+                        <a href="#"
+                            ><div>
+                                <img src="./img/footer/1.png" alt="" /></div
+                        ></a>
+                        <a href="#"
+                            ><div>
+                                <img src="./img/footer/2.png" alt="" /></div
+                        ></a>
+                        <a href="#"
+                            ><div>
+                                <img src="./img/footer/3.png" alt="" /></div
+                        ></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
