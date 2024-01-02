@@ -255,8 +255,8 @@ body {
 .header__btn {
   padding: 14px 35px;
   border-radius: 15px;
-  background: -webkit-gradient(linear, left top, right top, from(#d034ea), color-stop(49.48%, #f12626), to(#f26428));
-  background: linear-gradient(90deg, #d034ea 0%, #f12626 49.48%, #f26428 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#d034ea), color-stop(49.48%, #f12626), to(#f26428)) !important;
+  background: linear-gradient(90deg, #d034ea 0%, #f12626 49.48%, #f26428 100%) !important;
   color: #fff;
   font-size: 18px;
   font-weight: 600;
@@ -1039,20 +1039,92 @@ body {
   visibility: visible;
 }
 
+/* Стили для оверлея */
 .overlay {
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.7); /* Прозрачный черный цвет */
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  z-index: 99;
+}
+
+/* Стили для мобильного меню */
+.mobile-menu {
+  margin-top: -77px;
   display: none;
-  z-index: 999; /* Поверх других элементов */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: white;
+  z-index: 1000;
+}
+
+.mobile-menu a {
+  display: block;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.mobile-menuStyle1 {
+  margin-top: 236px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mobile-menuStyle {
+  margin-bottom: 20px;
+  gap: 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.mobile-menuStyle > a {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.mobile-menu-header {
+  background: #161519;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100vw;
+  height: 78px;
+  padding: 20px 55px;
+}
+
+.header__logo > a {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 700;
 }
 
 @media (max-width: 768px) {
   .container {
-    max-width: 710px;
+    max-width: 650px;
   }
   .hiddenMob {
     display: none;
@@ -1060,10 +1132,25 @@ body {
   .header {
     border: 1px solid #161519;
   }
+  .header__btn {
+    font-size: 14px;
+  }
   .tagline__text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 710px;
     padding-top: 63px;
   }
   .tagline__text-title {
+    max-width: 320px;
     font-size: 40px;
     line-height: normal;
     margin-bottom: 5px;
@@ -1076,6 +1163,7 @@ body {
     left: 167px;
   }
   .tagline__text > p {
+    max-width: 320px;
     font-size: 12px;
     margin-bottom: 10px;
     line-height: 25px;
@@ -1109,7 +1197,7 @@ body {
   }
   .tagline__blur-box {
     top: 158px;
-    left: 35px;
+    left: 200px;
   }
   .tagline__blur {
     width: 250px;
@@ -1123,7 +1211,7 @@ body {
     background: url("/img/mobile/tagline/bg1.png") no-repeat !important;
     position: absolute;
     top: 150px;
-    left: 224px;
+    left: 324px;
   }
   .tagline__bg2 {
     width: 257px;
@@ -1133,10 +1221,11 @@ body {
     left: 48px;
   }
   .tagline__mobBg {
+    margin-top: 10px;
     margin-bottom: -20px;
   }
   .advantages {
-    height: 1000px;
+    height: 800px;
   }
   .advantages__content > h1 {
     padding-top: 35px;
@@ -1157,7 +1246,7 @@ body {
     margin-bottom: 5px;
   }
   .advantages__content-textBox-card-text p {
-    max-width: 215px;
+    max-width: 515px;
     font-size: 12px;
     line-height: 22px;
   }
@@ -1174,8 +1263,8 @@ body {
             filter: blur(100px);
   }
   .bg2-blur {
-    top: 924px;
-    left: 1px;
+    top: 724px;
+    left: 400px;
     width: 250px;
     height: 250px;
     -webkit-filter: blur(100px);
@@ -1186,14 +1275,14 @@ body {
     width: 70px;
     height: 40px;
     top: 81px;
-    left: 262px;
+    left: 635px;
   }
   .advantagesImg-arrow2 {
     background: url("/img/mobile/advantages/arrow2.png") no-repeat;
     width: 75px;
     height: 75px;
-    top: 598px;
-    left: 260px;
+    top: 420px;
+    left: 620px;
   }
   .advantagesImgs__flex1 {
     width: 60px;
@@ -1219,6 +1308,13 @@ body {
     margin-bottom: 55px;
   }
   .price__cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     row-gap: 45px;
     margin-bottom: 35px;
   }
@@ -1280,7 +1376,7 @@ body {
   }
   .price-arrow1 {
     top: -34px;
-    left: 240px;
+    left: 440px;
     background: url("/img/mobile/price/arrow1.png") no-repeat;
   }
   .faq__content {
@@ -1305,7 +1401,7 @@ body {
     height: 43px;
     width: 35px;
     top: 96px;
-    left: 300px;
+    left: 640px;
   }
   .faq__btns-more {
     border-radius: 15px;
@@ -1347,6 +1443,7 @@ body {
     padding: 15px 58px;
     border-radius: 50px;
     background: rgba(255, 255, 255, 0.1);
+    margin: 0 auto;
   }
   .footer__links-imgs {
     display: -webkit-box !important;
@@ -1364,5 +1461,8 @@ body {
   .activeMob {
     display: block;
     background: none;
+  }
+  .mobileMenuStatus {
+    display: none;
   }
 }

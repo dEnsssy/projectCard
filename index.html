@@ -36,9 +36,47 @@
                 <button class="header__btn animationLoad hidden hiddenMob">
                     Заказать
                 </button>
-                <button class="activeMob" onclick="toggleMenu()">
+                <button class="activeMob menuMobile" onclick="toggleMenu()">
                     <img src="./img/mobile/header/menu.png" alt="" />
                 </button>
+
+                <!-- Mobile menu -->
+                <div class="overlay" id="overlay"></div>
+                <div class="mobile-menu activeMob " id="mobileMenu">
+                    <div class="mobile-menu-header">
+                        <div class="header__logo">
+                            <a href="/index.html">Logo</a>
+                        </div>
+                        <button class="cross__menu" style="background: none" onclick="toggleMenu()">
+                            <img
+                                src="./img/mobile/header/image 71.png"
+                                alt=""
+                            />
+                        </button>
+                    </div>
+                    <div class="mobile-menuStyle1">
+                        <ul class="header__menu-list mobile-menuStyle">
+                            <a href="/index.html">
+                                <li class="headerActive">Главная</li>
+                            </a>
+                            <a href="/index.html">
+                                <li>Преимущества</li>
+                            </a>
+                            <a href="/index.html">
+                                <li>Наши цены</li>
+                            </a>
+                            <a href="/index.html">
+                                <li>FAQ</li>
+                            </a>
+                            <a href="/index.html">
+                                <li>Контакты</li>
+                            </a>
+                        </ul>
+                        <button class="header__btn activeMob hiddenMob mobileBtn" >
+                            Заказать
+                        </button>
+                    </div>
+                </div>
             </div>
         </header>
         <main class="main">

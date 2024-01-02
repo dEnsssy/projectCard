@@ -1,6 +1,10 @@
 let openTabs = []; // Хранит открытые табы
 
-
+let availableScreenWidth = window.screen.availWidth;
+let mobileMenu = document.getElementById("mobileMenu");
+if (availableScreenWidth < 770) {
+    mobileMenu.classList.add("mobileMenuStatus");
+}
 
 document.addEventListener("DOMContentLoaded", function () {
     const elements = document.querySelectorAll(".animationLoad");
@@ -9,25 +13,20 @@ document.addEventListener("DOMContentLoaded", function () {
             setTimeout(function () {
                 elements[index].classList.add("visible");
                 revealWithDelay(elements, index + 1);
-            }, 100); // Задержка в миллисекундах между появлением блоков
+            }, 1); // Задержка в миллисекундах между появлением блоков
         }
     }
     revealWithDelay(elements, 0);
 });
 
-
 function toggleMenu() {
-    var overlay = document.getElementById("overlay");
-    var menu = document.getElementById("menu");
+    let overlay = document.getElementById("overlay");
+    let mobileMenu = document.getElementById("mobileMenu");
 
-    // Переключение видимости затемнения и меню
-    if (overlay.style.display === "block" && menu.style.display === "block") {
-        overlay.style.display = "none";
-        menu.style.display = "none";
-    } else {
-        overlay.style.display = "block";
-        menu.style.display = "block";
-    }
+    overlay.style.display =
+        overlay.style.display === "block" ? "none" : "block";
+    mobileMenu.style.display =
+        mobileMenu.style.display === "block" ? "none" : "block";
 }
 
 
