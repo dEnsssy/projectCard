@@ -1118,6 +1118,14 @@ body {
 }
 
 @media (max-width: 768px) {
+  .modal-content-text {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+    gap: 10px !important;
+    font-size: 12px !important;
+  }
   body {
     max-width: 768px;
   }
